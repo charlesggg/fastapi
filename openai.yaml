@@ -1,0 +1,44 @@
+openapi: 3.0.1
+info:
+  title: Wikipedia AI Search
+  description: A plugin that allows ChatGPT to search Wikipedia in real-time.
+  version: "1.0.0"
+servers:
+  - url: https://yourdomain.com
+paths:
+  /search:
+    get:
+      operationId: searchWikipedia
+      summary: Search Wikipedia for an article
+      parameters:
+        - name: query
+          in: query
+          required: true
+          description: The search term to look up on Wikipedia.
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  query:
+                    type: string
+                    description: The original search query.
+                  title:
+                    type: string
+                    description: The title of the Wikipedia page.
+                  summary:
+                    type: string
+                    description: A short summary of the Wikipedia article.
+                  url:
+                    type: string
+                    format: uri
+                    description: The full Wikipedia article URL.
+        "404":
+          description: No Wikipedia article was found for the given query.
+        "500":
+          description: Internal server error.

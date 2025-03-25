@@ -1,0 +1,15 @@
+{
+  "schema_version": "v1",
+  "name_for_model": "wikipedia_search",
+  "name_for_human": "Wikipedia AI Search",
+  "description_for_model": "Searches Wikipedia and returns a summary of the topic.",
+  "description_for_human": "Search Wikipedia for articles and get summarized information.",
+  "auth": { "type": "none" },
+  "api": {
+    "type": "openapi",
+    "url": "https://yourdomain.com/openapi.yaml"
+  },
+  "logo_url": "https://yourdomain.com/logo.png",
+  "contact_email": "support@yourdomain.com",
+  "legal_info_url": "https://yourdomain.com/legal"
+}

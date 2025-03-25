@@ -1,0 +1,7 @@
+Install Your Plugin in ChatGPT
+
+Once your plugin is publicly hosted, install it into ChatGPT (Developer Mode):
+
+1️⃣ Open ChatGPT → Settings → Plugins (Enable Developer Mode).
+2️⃣ Go to Plugin Store → Install Unverified Plugin.
+3️⃣ Enter your plugin’s URL:  https://yourdomain.com/.well-known/ai-plugin.json
